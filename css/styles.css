@@ -2858,8 +2858,8 @@ textarea.form-control-lg {
   --bs-btn-bg: #F8BE00;
   --bs-btn-border-color: #F8BE00;
   --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #16a085;
-  --bs-btn-hover-border-color: #15967d;
+  --bs-btn-hover-bg: #440b02;
+  --bs-btn-hover-border-color: #440b02;
   --bs-btn-focus-shadow-rgb: 60, 198, 171;
   --bs-btn-active-color: #fff;
   --bs-btn-active-bg: #15967d;
@@ -11052,4 +11052,383 @@ html {
 
 .copyright {
   background-color: #1a252f;
+}
+
+/**
+ * Start Berry Ripe Games Styling
+ */
+body
+{
+  --main-dark: #6f2a1f;
+  --main-dark-accent: #440b02;
+  --header-main: #db7853;
+  --text-header: #340700;
+  --text-bold-header: #fdd964;
+  --text-bold: #b28802;
+  --text: #fc7e50;
+  
+  --banana-cowboy: #fdd964;
+  --prickly-pete: #c14965;
+  --the-quiet: #b59575;
+  --the-pepper-gang: #9e9e31;
+  --zeke: #7d0e00;
+  --amarilla:  #bcc12e;
+
+  --newsletter: #e8e0b2;
+
+  color: var(--text);
+  user-select: none;
+
+  font-family: "Peralta", serif;
+  font-weight: 400;
+  font-style: normal;
+
+  font-size: 1.7rem;
+}
+
+@media (max-width: 600px)
+{
+  body
+  {
+    font-size: 0.7rem;
+  }
+}
+
+img
+{
+  max-width: 100vw;
+}
+
+h1, h2, h3, h4, h5, h6
+{
+  font-family: "Fontdiner Swanky", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+p
+{
+  user-select: text;
+}
+
+hr
+{
+  border-top: 5px dotted var(--text-header);
+  margin-left: 5vw;
+  margin-right: 5vw;
+}
+
+.header
+{
+  height: 155vh;
+  text-align: center;
+  color: var(--text-header);
+}
+
+.header strong
+{
+  color: var(--text-bold-header);
+}
+
+.parallax
+{
+  position: relative;
+  overflow: hidden;
+  height: 125vh;
+}
+
+.parallax-bg
+{
+  position: absolute;
+  height: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.parallax-bg img
+{
+  max-width: none;
+  object-fit: fill;
+  height: 100%;
+}
+
+.parallax-mg
+{
+  position: absolute;
+  height: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.parallax-mg img
+{
+  max-width: none;
+  object-fit: fill;
+  height: 100%;
+}
+
+.parallax-fg
+{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.parallax-fg > img
+{
+  object-fit: cover;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.parallax .logo
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10vw;
+  margin: 15px;
+}
+
+.header-bar
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 125vh;
+  width: 100vw;
+}
+
+.header-content
+{
+  position: relative;
+  top: 0vh;
+  left: 0;
+  background: var(--header-main);
+  height: 20vh;
+  width: 100%;
+  z-index: 5;
+}
+
+.wave-container
+{
+  position: relative;
+  width: 100%;
+  height: 10vh;
+}
+
+.wave-1
+{
+  --mask:
+    radial-gradient(4.92vw at 50% 6.9vw,#000 99%,#0000 101%) calc(50% - 6vw) 0/12vw 100%,
+    radial-gradient(4.92vw at 50% -3.9vw,#0000 99%,#000 101%) 50% 3vw/12vw 100% repeat-x;
+  -webkit-mask: var(--mask);
+  mask: var(--mask);
+
+  position: absolute;
+  bottom: 5vh;
+  left: 0;
+  background: var(--main-dark-accent);
+  height: 20vh;
+  width: 100%;
+  z-index: 2;
+}
+
+.wave-1-down
+{
+  --mask:
+    radial-gradient(4.92vw at 50% calc(100% - 6.9vw),#000 99%,#0000 101%) calc(50% - 6vw) 0/12vw 100%,
+    radial-gradient(4.92vw at 50% calc(100% + 3.9vw),#0000 99%,#000 101%) 50% calc(100% - 3vw)/12vw 100% repeat-x;
+  -webkit-mask: var(--mask);
+  mask: var(--mask);
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: var(--main-dark-accent);
+  height: 20vh;
+  width: 100%;
+  z-index: 2;
+}
+
+.wave-2 {
+  --mask:
+    radial-gradient(3.94vw at 50% 5.4vw,#000 99%,#0000 101%) calc(50% - 4vw) 0/8vw 100%,
+    radial-gradient(3.94vw at 50% -3.4vw,#0000 99%,#000 101%) 50% 2vw/8vw 100% repeat-x;
+  -webkit-mask: var(--mask);
+  mask: var(--mask);
+
+  background: var(--main-dark);
+  height: 17vh;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 3;
+}
+
+.wave-2-down
+{
+  --mask:
+    radial-gradient(3.94vw at 50% calc(100% - 5.4vw),#000 99%,#0000 101%) calc(50% - 4vw) 0/8vw 100%,
+    radial-gradient(3.94vw at 50% calc(100% + 3.4vw),#0000 99%,#000 101%) 50% calc(100% - 2vw)/8vw 100% repeat-x;
+  -webkit-mask: var(--mask);
+  mask: var(--mask);
+
+  background: var(--main-dark);
+  height: 17vh;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 3;
+}
+
+.wave-3
+{
+  --mask:
+    radial-gradient(5.2vw at 50% 7.35vw,#000 99%,#0000 101%) calc(50% - 7vw) 0/14vw 100%,
+    radial-gradient(5.2vw at 50% -3.85vw,#0000 99%,#000 101%) 50% 3.5vw/14vw 100% repeat-x;
+  -webkit-mask: var(--mask);
+  mask: var(--mask);
+
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: var(--header-main);
+  height: 15vh;
+  width: 100%;
+  z-index: 4;
+}
+
+.wave-3-down
+{
+  --mask:
+    radial-gradient(5.2vw at 50% calc(100% - 7.35vw),#000 99%,#0000 101%) calc(50% - 7vw) 0/14vw 100%,
+    radial-gradient(5.2vw at 50% calc(100% + 3.85vw),#0000 99%,#000 101%) 50% calc(100% - 3.5vw)/14vw 100% repeat-x;
+  -webkit-mask: var(--mask);
+  mask: var(--mask);
+
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 15vh;
+  width: 100%;
+  z-index: 4;
+  background: var(--header-main);
+}
+
+.content
+{
+  background: var(--main-dark);
+}
+
+.planet-showcase
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.planet-showcase img
+{
+  width: 30vw;
+  height: 100%;
+}
+
+.game-description
+{
+  text-align: center; 
+  vertical-align: middle;
+  margin: 20px 100px 20px 100px;
+}
+
+@media (max-width: 600px)
+{
+  .game-description
+  {
+    margin: 20px 0px 20px 0px;
+  }
+}
+
+.characters
+{
+  background: var(--main-dark-accent);
+  text-align: center; 
+  vertical-align: middle;
+}
+
+.characters h1, h2, h3, h4, h5, h6
+{
+  color: var(--text);
+}
+
+.character
+{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 20px;
+}
+
+.character > *
+{
+  width: 30%;
+}
+
+.character-text
+{
+  width: 70%;
+}
+
+.character-img 
+{
+  height: 100%;
+}
+
+.rev
+{
+  flex-direction: row-reverse;
+}
+
+@media (max-width: 600px)
+{
+  .character
+  {
+    flex-direction: column;
+  }
+
+  .character > *
+  {
+    width: 80%;
+  }
+
+  .character-img
+  {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.copyright
+{
+  background-color: var(--main-dark-accent);
+}
+
+@media (max-width: 600px)
+{
+  .follow-img
+  {
+    width: auto;
+    height: 100vh;
+    object-fit: cover; 
+    overflow: hidden;
+  }
 }

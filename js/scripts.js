@@ -7,6 +7,20 @@
 // Scripts
 // 
 
+function parallaxScroll() {
+    const scrolled = window.pageYOffset;
+    const parallaxBg = document.querySelector('.parallax-bg');
+    const parallaxMg = document.querySelector('.parallax-mg');
+    
+    // Background moves slower
+    parallaxBg.style.transform = `translateY(${scrolled * 0.5}px)`;
+    parallaxMg.style.transform = `translateY(${scrolled * 0.3}px)`;
+}
+
+window.addEventListener('scroll', () => {
+    parallaxScroll();
+});
+
 window.addEventListener('DOMContentLoaded', event => {
 
     // Navbar shrink function

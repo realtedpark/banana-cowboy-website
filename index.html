@@ -15,63 +15,166 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet"
         type="text/css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fontdiner+Swanky&family=Peralta&display=swap" rel="stylesheet">
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
 </head>
 
-<body id="page-top">
-    <!-- Masthead-->
-    <header class="masthead bg-primary text-white text-center">
-        <div class="container d-flex align-items-center flex-column">
-            <!-- Masthead Avatar Image-->
-            <img class="img-fluid" src="assets/img/banana-cowboy-logo.png" alt="..." />
-            <!-- Divider-->
-            <div class="divider-custom divider-light">
-                <div class="divider-custom-line"></div>
-                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                <div class="divider-custom-line"></div>
+<body>
+    <!-- Header with parallax -->
+    <div class="header">
+        <div class="parallax">
+            <div class="parallax-bg">
+                <img src="/assets/img/banana-cowboy/Homepage-background.png" />
             </div>
-            <!-- Masthead Heading-->
-            <h1 class="masthead-heading text-uppercase mb-5"><i>See You, Banana Cowboy...</i></h1>
+            <div class="parallax-mg">
+                <img src="/assets/img/banana-cowboy/Homepage-midground.png" />
+            </div>
+            <div class="parallax-fg">
+                <img src="/assets/img/banana-cowboy/Homepage-foreground.png" />  
+            </div>
+            <img class="logo" src="/assets/img/berry-ripe-games-logo-transparent.png"/>
+        </div>
+        <div class="header-bar">
+            <div class="wave-container">
+                <div class="wave-1"></div>
+                <div class="wave-2"></div>
+                <div class="wave-3"></div>
+            </div>
+            <div class="header-content">
+                <h1>Explore the Galaxy as <strong>Banana Cowboy</strong> in</h1>
+                <hr/>
+                <h2><em><strong>Banana Cowboy:</strong><strong style="color: var(--zeke)"> The Wild Bunch</strong></em></h2>
+            </div>
 
-            <!-- About Section Heading-->
+        </div>
+    </div>
+
+
+    <div class="content">
+        <!-- Begin Game Description -->
+        <div class="wave-container">
+            <div class="wave-3-down"></div>
+        </div>
+        <div>
+            <div class="game-description">
+                <p>
+                    <strong style="color: var(--banana-cowboy)">Banana Cowboy</strong> wanted a simple life serving as sheirf on the isolated planet of Durian Gap with his deputy  <strong style="color: var(--prickly-pete)">Prickly Pete</strong>. However, his past wouldn't leave him be. Forced out of hiding by the famed bounty hunter <strong style="color: var(--the-quiet)">The Quiet</strong>, Banana Cowboy must travel the Galaxy to prove his innocence of a murder he didn't commit. Along the way, he must face down his old friends from <strong style="color: var(--the-pepper-gang)">The Pepper Gang</strong>.
+                </p>
+            </div>
+            <div class="planet-showcase">
+                <img src="/assets/img/banana-cowboy/Vintos-Poster.png"/>
+                <img src="/assets/img/banana-cowboy/Tangerina-poster.png"/>
+                <img src="/assets/img/banana-cowboy/Whisper-9-Poster.png"/>
+            </div>
         </div>
 
-        <div id="mc_embed_shell">
+        <!-- Begin Characters -->
+        <div class="characters">
+            <div class="wave-container">
+                <div class="wave-2-down"></div>
+            </div>
+            <div style="height: 10vh;"></div>
+            <h2>Meet the Cast!</h2>
+            <hr style="border-top: 6px dotted var(--text);"/>
+            <div class="character">
+                <div class="character-text">
+                    <h3><strong style="color: var(--banana-cowboy)">Banana Cowboy</strong></h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
+                    </p>
+                </div>
+                <div style="height:100%;">
+                    <img class="character-img" src="/assets/img/banana-cowboy/Banana-Cowboy-character.png"/>
+                </div>
+            </div>
+            
+            <div class="character rev">
+                <div class="character-text">
+                    <h3><strong style="color: var(--prickly-pete)">Prickly Pete</strong></h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
+                    </p>
+                </div>
+                <div style="height:100%;">
+                    <img class="character-img" src="/assets/img/banana-cowboy/Prickly-Pete-character.png"/>
+                </div>
+            </div>
+            
+            <div class="character">
+                <div class="character-text">
+                    <h3><strong style="color: var(--the-pepper-gang)">The Pepper Gang</strong></h3>
+                        <p>
+                        Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
+                    </p>
+                </div>
+                <div style="height:100%;">
+                    <img class="character-img" src="/assets/img/banana-cowboy/The-Pepper-Gang-characters.png"/>
+                </div>
+            </div>
 
-            <div id="mc_embed_signup">
-                <form
-                    action="https://berryripegames.us8.list-manage.com/subscribe/post?u=aee8bc79f33116515befd9f0a&amp;id=df99f9f8b7&amp;f_id=0090d1e1f0"
-                    method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
-                    target="_self" novalidate="">
+            <div class="character rev">
+                <div class="character-text">
+                    <h3><strong style="color: var(--the-quiet)">The Quiet</strong></h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
+                    </p>
+                </div>
+                <div style="height:100%;">
+                    <img class="character-img" src="/assets/img/banana-cowboy/The-Quiet-character.png"/>
+                </div>
+            </div>
+        </div>
+        <!-- End Characters -->
 
-                    <div id="mc_embed_signup_scroll">
-                        <input type="email" name="EMAIL" class="form-email" id="mce-EMAIL" placeholder="Email address" value="" required>
-                        <div style="position: absolute; left: -5000px;" aria-hidden="true">
-                            /* real people should not fill this in and expect good things - do not remove this or risk
-                            form bot signups */
-                            <input type="text" name="b_aee8bc79f33116515befd9f0a_df99f9f8b7" tabindex="-1" value="">
+        <!-- Begin Team -->
+        <div>
+            <div class="wave-container" style="height: auto;">
+                <div class="wave-1-down"></div>
+                <img class="follow-img" src="/assets/img/banana-cowboy/About-team-poster.png"/>
+                <div style="position: absolute; top: 30%; width: 100%; display: flex; align-items: center; justify-content: center;">
+                    <div style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+                        <h2 style="color: var(--text-bold-header)">Follow the Development!</h2>
+                        <div>
+                            <a class="btn btn-outline-light btn-social mx-1" href="https://www.youtube.com/@BerryRipeGames"><i
+                                    class="fab fa-fw fa-youtube"></i></a>
+                            <a class="btn btn-outline-light btn-social mx-1" href="https://www.instagram.com/berryripegames"><i
+                                    class="fab fa-fw fa-instagram"></i></a>
+                            <a class="btn btn-outline-light btn-social mx-1" href="https://www.tiktok.com/@banana.longhorns"><i
+                                    class="fab fa-fw fa-tiktok"></i></a>
                         </div>
-                        <input type="submit" name="subscribe" id="mc-embedded-subscribe" class="btn btn-primary btn-xl" value="Subscribe">
+                        <h2 style="margin-top: 40px; color: #f1f1f1">Newsletter</h2>
+                         <div id="mc_embed_shell">
+                            <div id="mc_embed_signup">
+                                <form
+                                    action="https://berryripegames.us8.list-manage.com/subscribe/post?u=aee8bc79f33116515befd9f0a&amp;id=df99f9f8b7&amp;f_id=0090d1e1f0"
+                                    method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
+                                    target="_self" novalidate="">
+
+                                    <div id="mc_embed_signup_scroll" style="display: flex; flex-wrap: wrap; align-items: center; justify-content: center; margin: 10px;">
+                                        <input type="email" name="EMAIL" class="form-email" id="mce-EMAIL" placeholder="Email address" value="" required>
+                                        <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                                            /* real people should not fill this in and expect good things - do not remove this or risk
+                                            form bot signups */
+                                            <input type="text" name="b_aee8bc79f33116515befd9f0a_df99f9f8b7" tabindex="-1" value="">
+                                        </div>
+                                        <input type="submit" name="subscribe" id="mc-embedded-subscribe" class="btn btn-primary btn-xl" value="Subscribe">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
                     </div>
-                </form>
+
+
+                </div>
             </div>
         </div>
+            
+    </div>
 
-
-    </header>
-    <!-- About Section-->
-    <section class="page-section-heading bg-primary text-white text-center" id="about">
-        <div class="container">
-            <img class="masthead-avatar mb-5" src="assets/img/berry-ripe-games-logo.png" alt="..." />
-        </div>
-    </section>
-    <!-- Footer-->
-    <footer class="footer text-center">
-        <a class="btn btn-outline-light btn-social mx-1" href="https://www.youtube.com/@BerryRipeGames"><i class="fab fa-fw fa-youtube"></i></a>
-        <a class="btn btn-outline-light btn-social mx-1" href="https://www.instagram.com/berryripegames"><i class="fab fa-fw fa-instagram"></i></a>
-        <a class="btn btn-outline-light btn-social mx-1" href="https://www.tiktok.com/@banana.longhorns"><i class="fab fa-fw fa-tiktok"></i></a>
-    </footer>
     <!-- Copyright Section-->
     <div class="copyright py-4 text-center text-white">
         <div class="container"><small>&copy; 2024 Berry Ripe Games LLC</small></div>
