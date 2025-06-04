@@ -11072,7 +11072,7 @@ body
   --the-quiet: #302b26;
   --the-pepper-gang: #4f4f13;
   --zeke: #7d0e00;
-  --amarilla:  #bcc12e;
+  --amarilla:  #4f4f13;
 
   --header-top: #432d60;
 
@@ -11198,7 +11198,7 @@ hr
   position: absolute;
   top: 0;
   left: 0;
-  width: 10vw;
+  width: 15vh;
   margin: 15px;
 }
 
@@ -11566,4 +11566,23 @@ hr
 h2, h3
 {
   color: var(--text-dark-yellow);
+}
+
+.btn
+{
+  margin-right: 10px;
+}
+
+@media (max-width: 600px)
+{
+
+  .form-email
+  {
+    width: 70vw;
+  }
+
+  .btn
+  {
+    margin-top: 10px;
+  }
 }
