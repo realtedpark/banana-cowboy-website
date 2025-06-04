@@ -11074,8 +11074,11 @@ body
   --zeke: #7d0e00;
   --amarilla:  #bcc12e;
 
+  --header-top: #432d60;
+
   --other-games: #6ac9c6;
   --newsletter: #e8e0b2;
+  --header: #e8e0b2;
   --text-dark-yellow: #F8BE00;
 
   color: var(--text);
@@ -11197,6 +11200,25 @@ hr
   left: 0;
   width: 10vw;
   margin: 15px;
+}
+
+.navigation
+{
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 5vh;
+  background: linear-gradient(var(--header-top), #0000);
+  z-index: 8;
+
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.navigation a
+{
+  margin-right: 20px;
+  color: var(--header);
 }
 
 .header-bar
@@ -11539,4 +11561,9 @@ hr
     object-fit: cover; 
     overflow: hidden;
   }
+}
+
+h2, h3
+{
+  color: var(--text-dark-yellow);
 }
