@@ -9,12 +9,12 @@
 
 function parallaxScroll() {
     const scrolled = window.pageYOffset;
-    const parallaxBg = document.querySelector('.parallax-bg');
-    const parallaxMg = document.querySelector('.parallax-mg');
+    const parallax = document.querySelectorAll('.parallax');
     
-    // Background moves slower
-    parallaxBg.style.transform = `translateY(${scrolled * 0.5}px)`;
-    parallaxMg.style.transform = `translateY(${scrolled * 0.3}px)`;
+    parallax.forEach(element => {
+        const speed = element.dataset.speed;
+        element.style.transform = `translateY(${scrolled * speed}px)`;
+    });
 }
 
 window.addEventListener('scroll', () => {

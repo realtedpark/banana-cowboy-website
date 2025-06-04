@@ -76,7 +76,7 @@
   --bs-link-color: #1abc9c;
   --bs-link-hover-color: #15967d;
   --bs-code-color: #d63384;
-  --bs-highlight-bg: #fff3cd;
+  --bs-highlight-bg: #2e2300;
 }
 
 *,
@@ -11068,13 +11068,15 @@ body
   --text: #fc7e50;
   
   --banana-cowboy: #fdd964;
-  --prickly-pete: #c14965;
-  --the-quiet: #b59575;
-  --the-pepper-gang: #9e9e31;
+  --prickly-pete: #842239;
+  --the-quiet: #302b26;
+  --the-pepper-gang: #4f4f13;
   --zeke: #7d0e00;
   --amarilla:  #bcc12e;
 
+  --other-games: #6ac9c6;
   --newsletter: #e8e0b2;
+  --text-dark-yellow: #F8BE00;
 
   color: var(--text);
   user-select: none;
@@ -11104,6 +11106,7 @@ h1, h2, h3, h4, h5, h6
   font-family: "Fontdiner Swanky", serif;
   font-weight: 400;
   font-style: normal;
+  text-align: center;
 }
 
 p
@@ -11118,60 +11121,26 @@ hr
   margin-right: 5vw;
 }
 
+/*** Works on common browsers ***/
+::selection
+{
+    background-color: #000000;
+    color: #fff;
+}
+
 .header
 {
-  height: 155vh;
-  text-align: center;
-  color: var(--text-header);
+  height: 135vh;
 }
 
-.header strong
-{
-  color: var(--text-bold-header);
-}
-
-.parallax
+.parallax-container
 {
   position: relative;
   overflow: hidden;
   height: 125vh;
 }
 
-.parallax-bg
-{
-  position: absolute;
-  height: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  z-index: -1;
-}
-
-.parallax-bg img
-{
-  max-width: none;
-  object-fit: fill;
-  height: 100%;
-}
-
-.parallax-mg
-{
-  position: absolute;
-  height: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  z-index: -1;
-}
-
-.parallax-mg img
-{
-  max-width: none;
-  object-fit: fill;
-  height: 100%;
-}
-
-.parallax-fg
+.parallax
 {
   position: absolute;
   bottom: 0;
@@ -11180,15 +11149,48 @@ hr
   width: 100%;
 }
 
-.parallax-fg > img
+.parallax img
 {
   object-fit: cover;
-  position: absolute;
-  bottom: 0;
-  right: 0;
+  height: 100%;
 }
 
-.parallax .logo
+.parallax.foreground
+{
+  height: auto;
+    bottom: 5vh;
+}
+
+.parallax.uniform img
+{
+  object-fit: contain;
+}
+
+.parallax.dust
+{
+  bottom: -3vh;
+}
+
+@media (max-width: 700px)
+{
+  .parallax.planet
+  {
+    top: -40vh;
+    left: 0;
+  }
+
+  .parallax.foreground
+  {
+    bottom: 15vh;
+  }
+}
+
+.parallax.planet img
+{
+  object-fit: contain;
+}
+
+.parallax-container .logo
 {
   position: absolute;
   top: 0;
@@ -11208,14 +11210,41 @@ hr
 
 .header-content
 {
+  text-align: center;
   position: relative;
   top: 0vh;
   left: 0;
+  color: var(--text-header);
   background: var(--header-main);
-  height: 20vh;
   width: 100%;
   z-index: 5;
 }
+
+.header-content strong
+{
+  color: var(--text-bold-header);
+}
+
+@media (max-width: 700px)
+{
+  .header
+  {
+    height: 80vh;
+  }
+
+  .header-bar
+  {
+    margin-top: 80vh;
+  }
+  .parallax.foreground
+  {
+    top: 0;
+    object-fit: cover;
+    height: auto;
+    width: 100vw;
+  }
+}
+
 
 .wave-container
 {
@@ -11317,7 +11346,7 @@ hr
   mask: var(--mask);
 
   position: absolute;
-  bottom: 0;
+  top: 7vh;
   left: 0;
   height: 15vh;
   width: 100%;
@@ -11343,7 +11372,7 @@ hr
   height: 100%;
 }
 
-.game-description
+.description
 {
   text-align: center; 
   vertical-align: middle;
@@ -11352,10 +11381,47 @@ hr
 
 @media (max-width: 600px)
 {
-  .game-description
+  .description
   {
     margin: 20px 0px 20px 0px;
   }
+}
+
+.showcase
+{
+  margin-top: 5vh; 
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center;
+}
+
+.showcase hr
+{
+  width: 80vw;
+}
+
+.showcase img
+{
+  margin: 20px; 
+  border-radius: 20px; 
+  width: 80%;
+}
+
+.showcase.platforms
+{
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.showcase.platforms img
+{
+  width: 150px;
+}
+
+.dark-content
+{
+  background: var(--main-dark-accent);
 }
 
 .characters
@@ -11398,6 +11464,48 @@ hr
   flex-direction: row-reverse;
 }
 
+.team
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.team-member
+{
+  width: 300px;
+  margin: 20px;
+}
+
+.team-portrait
+{
+  height: 300px;
+}
+
+.team-member .name
+{
+  margin: 0;
+  text-decoration: underline;
+}
+
+.team-member .title
+{
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: 1rem;
+  font-style: italic;
+}
+
+.team-portrait img
+{
+  border-radius: 100%;
+  border: 5px solid var(--header-main);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 @media (max-width: 600px)
 {
   .character
@@ -11419,7 +11527,7 @@ hr
 
 .copyright
 {
-  background-color: var(--main-dark-accent);
+  background-color: var(--main-dark);
 }
 
 @media (max-width: 600px)

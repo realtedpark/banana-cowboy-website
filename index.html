@@ -24,17 +24,66 @@
 </head>
 
 <body>
-    <!-- Header with parallax -->
+    <!-- Header bg with parallax -->
     <div class="header">
-        <div class="parallax">
-            <div class="parallax-bg">
-                <img src="/assets/img/banana-cowboy/Homepage-background.png" />
+        <div class="parallax-container">
+            <!-- Sky -->
+            <div class="parallax" data-speed="0.6">
+                <img src="/assets/img/banana-cowboy/header-parallax/background/Backdrop_Space.png" />
             </div>
-            <div class="parallax-mg">
-                <img src="/assets/img/banana-cowboy/Homepage-midground.png" />
+            
+            <!-- Clouds -->
+            <div class="parallax" data-speed="0.6">
+                <img src="/assets/img/banana-cowboy/header-parallax/background/Spacey_Clouds_back.png" />  
             </div>
-            <div class="parallax-fg">
-                <img src="/assets/img/banana-cowboy/Homepage-foreground.png" />  
+            <div class="parallax" data-speed="0.5">
+                <img src="/assets/img/banana-cowboy/header-parallax/background/clouds_main.png" />  
+            </div>
+
+            <div class="parallax planet" data-speed="0.6">
+                <img src="/assets/img/banana-cowboy/header-parallax/background/Little_Moon.png" />
+            </div>
+            <div class="parallax" data-speed="0.5">
+                <img src="/assets/img/banana-cowboy/header-parallax/background/Sparklies.png" />  
+            </div>
+            <div class="parallax planet" data-speed="0.4">
+                <img src="/assets/img/banana-cowboy/header-parallax/background/Tangerina.png" />
+            </div>
+
+
+
+            <!-- Cliff -->
+            <div class="parallax foreground uniform" data-speed="0.4">
+                <img src="/assets/img/banana-cowboy/header-parallax/background/Cliff_Blurred.png" />  
+            </div>
+
+            <!-- BG ground -->
+            <div class="parallax foreground" data-speed="0.3">
+                <img src="/assets/img/banana-cowboy/header-parallax/foreground/Back_Dust.png" />  
+            </div>
+            <div class="parallax foreground" data-speed="0.25">
+                <img src="/assets/img/banana-cowboy/header-parallax/foreground/Back_Shrub.png" />  
+            </div>
+
+            <!-- Cowboy and horse -->
+            <div class="parallax foreground uniform" data-speed="0.2">
+                <img src="/assets/img/banana-cowboy/header-parallax/foreground/Main_Ground.png" />  
+            </div>
+            <div class="parallax foreground uniform" data-speed="0.2">
+                <img src="/assets/img/banana-cowboy/header-parallax/foreground/Banana_Cowboy_and_Horse.png" />  
+            </div>
+            <div class="parallax foreground dust uniform" data-speed="0.2">
+                <img src="/assets/img/banana-cowboy/header-parallax/foreground/Front_Dust.png" />  
+            </div>
+
+            <!-- Foreground ground -->
+            <div class="parallax foreground" data-speed="0">
+                <img src="/assets/img/banana-cowboy/header-parallax/foreground/Front_Cactus_Tumbleweed.png" />  
+            </div>
+
+            <!-- LOGO -->
+            <div class="parallax foreground uniform" data-speed="0.1">
+                <img src="/assets/img/banana-cowboy/header-parallax/logo/Logo_Words.png" />  
             </div>
             <img class="logo" src="/assets/img/berry-ripe-games-logo-transparent.png"/>
         </div>
@@ -42,38 +91,162 @@
             <div class="wave-container">
                 <div class="wave-1"></div>
                 <div class="wave-2"></div>
-                <div class="wave-3"></div>
+                <div class="wave-3" style="bottom: -1px;"></div>
             </div>
-            <div class="header-content">
-                <h1>Explore the Galaxy as <strong>Banana Cowboy</strong> in</h1>
-                <hr/>
-                <h2><em><strong>Banana Cowboy:</strong><strong style="color: var(--zeke)"> The Wild Bunch</strong></em></h2>
-            </div>
+        </div>
+    </div>
 
+    <!-- Actual header content -->
+    <div class="header-content">
+        <h1>Explore the Galaxy as <strong>Banana Cowboy</strong> in</h1>
+        <hr/>
+        <h2><em><strong>Banana Cowboy:</strong><strong style="color: var(--zeke)"> The Wild Bunch</strong></em></h2>
+
+        <div class="description">
+            <p>
+                <strong style="color: var(--banana-cowboy)">Banana Cowboy</strong> wanted a simple life serving as sheirf on the isolated planet of Durian Gap with his deputy  <strong style="color: var(--prickly-pete)">Prickly Pete</strong>. However, his past wouldn't leave him be. Forced out of hiding by the famed bounty hunter <strong style="color: var(--the-quiet)">The Quiet</strong>, Banana Cowboy must travel the Galaxy to prove his innocence of a murder he didn't commit. Along the way, he must face down his old friends from <strong style="color: var(--the-pepper-gang)">The Pepper Gang</strong>.
+            </p>
+        </div>
+        <div class="wave-container" style="height: 3vh;">
+            <div class="wave-3-down" style="top: 3vh;"></div>
         </div>
     </div>
 
 
-    <div class="content">
-        <!-- Begin Game Description -->
-        <div class="wave-container">
-            <div class="wave-3-down"></div>
-        </div>
+    <div class="content" style="padding-top: 15vh;">
+
         <div>
-            <div class="game-description">
-                <p>
-                    <strong style="color: var(--banana-cowboy)">Banana Cowboy</strong> wanted a simple life serving as sheirf on the isolated planet of Durian Gap with his deputy  <strong style="color: var(--prickly-pete)">Prickly Pete</strong>. However, his past wouldn't leave him be. Forced out of hiding by the famed bounty hunter <strong style="color: var(--the-quiet)">The Quiet</strong>, Banana Cowboy must travel the Galaxy to prove his innocence of a murder he didn't commit. Along the way, he must face down his old friends from <strong style="color: var(--the-pepper-gang)">The Pepper Gang</strong>.
-                </p>
-            </div>
+            <h2>
+                Explore different fruit-themed planets!
+            </h2>
+            <hr/>
             <div class="planet-showcase">
                 <img src="/assets/img/banana-cowboy/Vintos-Poster.png"/>
                 <img src="/assets/img/banana-cowboy/Tangerina-poster.png"/>
                 <img src="/assets/img/banana-cowboy/Whisper-9-Poster.png"/>
             </div>
         </div>
+        <div class="showcase">
+            <h2>
+                Use your trusty lasso to navigate the environment!
+            </h2>
+            <hr/>
+            <img src="/assets/img/banana-cowboy/About-team-poster.png" />
+        </div>
+        <div class="showcase">
+            <h2>
+                Help the townsfolk while hunting bounties!
+            </h2>
+            <hr/>
+            <img src="/assets/img/banana-cowboy/townsfolk-3.png"/>
+        </div>
+
+        <h2>Coming to </h2>
+        <hr/>
+        <div class="showcase platforms">
+            <img src="/assets/img/platform-logos/Apple_iOS_logo.svg.png"/>
+            <img src="/assets/img/platform-logos/Nintendo-Switch-Logo.png"/>
+            <img src="/assets/img/platform-logos/windows-logo.png"/>
+            <img src="/assets/img/platform-logos/linux-logo.png"/>
+        </div>
+        
+        <div class="dark-content">
+            <div class="wave-container">
+                <div class="wave-2-down"></div>
+            </div>
+            <div class="description" style="padding: 40px;">
+    
+                <h3>About the Team</h3>
+                <hr style="border-top: 6px dotted var(--text);"/>
+                <p>
+                    Banana Cowboy started as a college project, built over a semester with a group of 7 students from UT Austin. Drawing inspiration from <em style="color: var(--other-games)">Super Mario Galaxy</em> and <em style="color: var(--other-games)">A Hat In Time</em>, <a href="https://store.steampowered.com/app/2962650/Banana_Cowboy/"><em>Banana Cowboy</em> released to Steam</a> with a "Very Positive" rating.
+                </p>
+                <p>
+                    Since then, the team decided to persue a fully polished remake with improvements to models, gameplay and story. The team has aquired new members, industry professionals with the experience to bring the team's goals to fruition.
+                </p>
+                <div class="team">
+
+                    <div class="team-member">
+                        <div class="team-portrait">
+                            <img src="/assets/img/banana-cowboy/About-team-poster.png"/>
+                        </div>
+                        <p class="name">Baylor</p>
+                        <p class="title">Product Manager</p>
+                    </div>
+                    <div class="team-member">
+                        <div class="team-portrait">
+                            <img src="/assets/img/banana-cowboy/About-team-poster.png"/>
+                        </div>
+                        <p class="name">Ted</p>
+                        <p class="title">Technical Producer</p>
+                    </div>
+                    <div class="team-member">
+                        <div class="team-portrait">
+                            <img src="/assets/img/portraits/Dain.png"/>
+                        </div>
+                        <p class="name">Dain</p>
+                        <p class="title">3D Modeler</p>
+                    </div>
+                    <div class="team-member">
+                        <div class="team-portrait">
+                            <img src="/assets/img/portraits/Landon.png"/>
+                        </div>
+                        <p class="name">Landon</p>
+                        <p class="title">Lead Programmer</p>
+                    </div>
+
+                    <div class="team-member">
+                        <div class="team-portrait">
+                            <img src="/assets/img/portraits/Joaquin.png"/>
+                        </div>
+                        <p class="name">Joaquin</p>
+                        <p class="title">Technical Artist</p>
+                    </div>
+
+                    <div class="team-member">
+                        <div class="team-portrait">
+                            <img src="/assets/img/portraits/Johan.png"/>
+                        </div>
+                        <p class="name">Johan</p>
+                        <p class="title">Level Designer</p>
+                    </div>
+                    <div class="team-member">
+                        <div class="team-portrait">
+                            <img src="/assets/img/portraits/Kacey.png"/>
+                        </div>
+                        <p class="name">Kacey</p>
+                        <p class="title">3D Animator</p>
+                    </div>
+
+                    <div class="team-member">
+                        <div class="team-portrait">
+                            <img src="/assets/img/portraits/Beau.png"/>
+                        </div>
+                        <p class="name">Beau</p>
+                        <p class="title">Sound Designer</p>
+                    </div>
+                    
+                    <div class="team-member">
+                        <div class="team-portrait">
+                            <img src="/assets/img/portraits/Alan.png"/>
+                        </div>
+                        <p class="name">Alan</p>
+                        <p class="title">Senior Programmer</p>
+                    </div>
+
+                    <div class="team-member">
+                        <div class="team-portrait">
+                            <img src="/assets/img/banana-cowboy/About-team-poster.png"/>
+                        </div>
+                        <p class="name">Layla</p>
+                        <p class="title">Concept Artist</p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <!-- Begin Characters -->
-        <div class="characters">
+        <!-- <div class="characters">
             <div class="wave-container">
                 <div class="wave-2-down"></div>
             </div>
@@ -127,17 +300,17 @@
                     <img class="character-img" src="/assets/img/banana-cowboy/The-Quiet-character.png"/>
                 </div>
             </div>
-        </div>
+        </div> -->
         <!-- End Characters -->
 
         <!-- Begin Team -->
         <div>
             <div class="wave-container" style="height: auto;">
-                <div class="wave-1-down"></div>
+                <div class="wave-1-down" style="top: -3vh;"></div>
                 <img class="follow-img" src="/assets/img/banana-cowboy/About-team-poster.png"/>
                 <div style="position: absolute; top: 30%; width: 100%; display: flex; align-items: center; justify-content: center;">
                     <div style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
-                        <h2 style="color: var(--text-bold-header)">Follow the Development!</h2>
+                        <h2 style="color: var(--text-dark-yellow)">Follow the Development!</h2>
                         <div>
                             <a class="btn btn-outline-light btn-social mx-1" href="https://www.youtube.com/@BerryRipeGames"><i
                                     class="fab fa-fw fa-youtube"></i></a>
@@ -161,18 +334,34 @@
                                             form bot signups */
                                             <input type="text" name="b_aee8bc79f33116515befd9f0a_df99f9f8b7" tabindex="-1" value="">
                                         </div>
-                                        <input type="submit" name="subscribe" id="mc-embedded-subscribe" class="btn btn-primary btn-xl" value="Subscribe">
+                                        <input type="submit" name="subscribe" id="mc-embedded-subscribe" class="btn btn-primary btn-xl" value="Subscribe" style="margin-left: 10px;">
                                     </div>
                                 </form>
                             </div>
                         </div>
+
+                        <h2 style="margin-top: 2vh; color: var(--text-dark-yellow)">Join the Playtests!</h2>
+                        <a class="btn btn-outline-light btn-social mx-1" href="https://discord.gg/tXGp6TVv"><i class="fab fa-fw fa-discord"></i></a>
                     </div>
-
-
                 </div>
             </div>
         </div>
             
+        <div class="dark-content">
+            <div class="wave-container">
+                <div class="wave-1"></div>
+            </div>
+
+            <div style="display: flex; flex-direction: column; justify-content: center; align-items: center; padding-bottom: 10vh;">
+                <h3>Parent Survey</h3>
+                <hr style="border-top: 6px dotted var(--text); width: 80vw;"/>
+                <p>
+                    Are you a parent? Is this the kind of game you'd want your kids to play? We want to hear from you!
+                </p>
+                <a href="">Take our Survey!</a>
+            </div>
+        </div>
+
     </div>
 
     <!-- Copyright Section-->
